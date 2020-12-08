@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     android:padding="10dp"
+    tools:context=".MainActivity">
+
+
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="Music" />
+
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+             android:text="play"
+             android:id="@+id/start"/>
+
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+             android:text="minus"
+              android:id="@+id/less"
+             android:layout_below="@+id/start"
+            />
+
+     <Button
+         android:id="@+id/more"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/less"
+
+         android:layout_marginTop="6dp"
+         android:text="plus" />
+
+     <SeekBar
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+           android:layout_below="@+id/more"
+             android:layout_marginTop="30dp"
+                 android:id="@+id/seek"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+           android:layout_below="@+id/seek"
+           android:id="@+id/stream"
+           android:text="Playstream"
+        />
+
+
+
+
+
+</RelativeLayout>
